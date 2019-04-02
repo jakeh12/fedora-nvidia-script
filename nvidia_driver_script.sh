@@ -26,7 +26,7 @@ fi
 chmod +x $version.run
 
 printf "\n\n----------------------------------------------------------------\nInstalling dependencies...\n----------------------------------------------------------------\n"
-sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig
+sudo dnf update -y && sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig
 
 printf "\n\n----------------------------------------------------------------\nChecking noveau blacklisting...\n----------------------------------------------------------------\n"
 
